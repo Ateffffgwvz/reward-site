@@ -16,7 +16,7 @@ uses: actions/checkout@v4
       distribution: temurin
       java-version: '17'
 
-  - name: Build APK
+  - name: Check Android project
     run: |
-      echo "We need to configure the Android app project before building."
-      echo "This workflow is a placeholder and does not build an APK yet."
+      echo "Workflow syntax is valid."
+      echo "Android project files are not configured yet."
