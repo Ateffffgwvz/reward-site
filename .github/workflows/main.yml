@@ -1,14 +1,7 @@
-name: Build Android APK
-
-on:
-workflow_dispatch:
-
+name: Test Workflow
+on: [workflow_dispatch]
 jobs:
-build:
+test:
 runs-on: ubuntu-latest
 steps:
-- name: Checkout repository
-uses: actions/checkout@v4
-
-  - name: Check workflow
-    run: echo "Workflow syntax is valid"
+- run: echo Hello
