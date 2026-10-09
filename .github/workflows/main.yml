@@ -1,0 +1,22 @@
+name: Build Android APK
+
+on:
+workflow_dispatch:
+
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- name: Checkout repository
+uses: actions/checkout@v4
+
+  - name: Set up JDK
+    uses: actions/setup-java@v4
+    with:
+      distribution: temurin
+      java-version: '17'
+
+  - name: Build APK
+    run: |
+      echo "We need to configure the Android app project before building."
+      echo "This workflow is a placeholder and does not build an APK yet."
