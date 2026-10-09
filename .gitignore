@@ -1,0 +1,7 @@
+rewards.db
+rewards.db-*
+*.backup
+app_backup*.py
+__pycache__/
+.env
+*.pyc
